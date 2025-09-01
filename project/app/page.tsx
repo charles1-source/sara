@@ -156,7 +156,7 @@ export default function Home() {
   }
 
   const handleQuickAction = (question: string) => {
-    const syntheticEvent = { preventDefault: () => {} } as React.FormEvent
+    const syntheticEvent = { preventDefault: () => {} } as React.FormEvent<HTMLFormElement>
     handleSubmit(syntheticEvent, question)
   }
 
